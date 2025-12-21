@@ -44,3 +44,4 @@ submission = pd.DataFrame({"Id": test_df["Id"],"SalePrice": test_pred})
 submission.to_csv("submission.csv", index=False)
 print("Prediction successfull!")
 
+
