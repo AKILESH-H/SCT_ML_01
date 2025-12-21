@@ -1,9 +1,9 @@
 import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error
-import matplotlib.pyplot as plt
-import numpy as np
 df = pd.read_csv("train.csv")
 features = ['GrLivArea', 'FullBath', 'BedroomAbvGr']
 a = df[features]
@@ -43,3 +43,4 @@ test_pred = model.predict(a_test_final)
 submission = pd.DataFrame({"Id": test_df["Id"],"SalePrice": test_pred})
 submission.to_csv("submission.csv", index=False)
 print("Prediction successfull!")
+
