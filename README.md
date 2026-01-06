@@ -9,7 +9,7 @@ This project implements a Linear Regression model to predict house prices using 
 
 📄 train.csv – Training dataset
 📄 test.csv – Test dataset
-🐍 task1_linear_regression.py – Main Python script
+🐍 task1.py – Main Python script
 📊 submission.csv – Predicted house prices
 
 **🔍 Features Used**
